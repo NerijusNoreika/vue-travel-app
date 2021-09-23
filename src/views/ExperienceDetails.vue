@@ -2,7 +2,7 @@
   <div>
     <div>
       <h2>{{ experience.name }}</h2>
-      <transition name="slide" mode="out-in">
+      <transition name="slide" mode="out-in" appear="true">
         <div class="experience-details">
           <img :src="require(`../assets/${experience.image}`)" />
           <div class="experience-description">
@@ -52,7 +52,7 @@ export default {
 
 .slide-enter-active,
 .slide-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 1s;
 }
 
 .slide-enter,
